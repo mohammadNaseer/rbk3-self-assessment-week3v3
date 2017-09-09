@@ -14,11 +14,16 @@ class FishTableRow extends React.Component {
         <td>
           <img src="http://tinyurl.com/h8o5szh" />
         </td>
+
         {this.state.showDescription ? <td className="fish-description">Does anyone know where my dad is?</td> : null}
+        <FishTable row={this.props.name}/>
       </tr>
     )
   }
 }
+
+
+          
 
 // PropTypes tell other developers what `props` a component expects
 // Warnings will be shown in the console when the defined rules are violated
