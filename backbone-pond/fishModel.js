@@ -10,6 +10,7 @@ var Fish = Backbone.Model.extend({
   }
 
   initialize: function(fish) {
+  	this.set({displayInfo: !this.get("displayInfo")});
     this.set('name', fish.name);
   }
 

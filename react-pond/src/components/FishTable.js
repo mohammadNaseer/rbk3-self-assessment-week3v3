@@ -1,14 +1,12 @@
-var FishTable = () => (
+var FishTable = (props) => (
   <table>
-    <tbody>
-      render: function() {
-    var FishTab = this.props.fishData.map(function(fish) {
+    
+           {props.fishes.map(fish=>
       return (
-                fishData={fishData};
-             )
-  }
-}
-    </tbody>
+                <FishTableRow fish ={fish}/>
+             )}
+
+   
   </table>
 );
 

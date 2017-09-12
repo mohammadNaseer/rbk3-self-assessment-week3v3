@@ -16,7 +16,7 @@ class FishTableRow extends React.Component {
         </td>
 
         {this.state.showDescription ? <td className="fish-description">Does anyone know where my dad is?</td> : null}
-        <FishTable row={this.props.name}/>
+        
       </tr>
     )
   }
